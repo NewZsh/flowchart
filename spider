@@ -1,1 +1,95 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T07:36:41.531Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" version="14.8.6" etag="53nSv84cz1BbhbLUXt8d" type="github"><diagram id="CIdqubcHAsQ1gp-ROHEp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-16T09:19:36.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="L9Fi9tfoFylMi_X8Dtc4" version="14.8.6" type="github">
+  <diagram id="CIdqubcHAsQ1gp-ROHEp" name="Page-1">
+    <mxGraphModel dx="927" dy="1634" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-7" target="0bUQnS7tA1ShmJKjDFLA-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-7" value="scheduler" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="391" width="270" height="104" as="geometry">
+            <mxRectangle x="415" y="430" width="80" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-8" value="&gt; 存储待爬取URL，并决定其顺序（优先队列）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-7">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-9" value="&gt; 存储已爬取的URL及爬取时间（memory-&gt;disk）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-7">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-10" value="&gt; 允许强制重爬已爬取的URL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-7">
+          <mxGeometry y="78" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-11" target="0bUQnS7tA1ShmJKjDFLA-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-11" target="0bUQnS7tA1ShmJKjDFLA-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-11" target="0bUQnS7tA1ShmJKjDFLA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-11" value="parser" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="392" y="607" width="126" height="78" as="geometry">
+            <mxRectangle x="440" y="620" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-12" value="&gt; 解析页面含有的url" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-11">
+          <mxGeometry y="26" width="126" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-13" value="&gt; 解析页面内容" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-11">
+          <mxGeometry y="52" width="126" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-16" value="URLs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="457" y="565" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-19" target="0bUQnS7tA1ShmJKjDFLA-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-19" value="monitor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="57" y="720" width="180" height="79" as="geometry">
+            <mxRectangle x="114" y="720" width="70" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-30" value="data writer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="620" width="180" height="52" as="geometry">
+            <mxRectangle x="680" y="620" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-31" value="&gt; 存储数据" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-30">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-35" value="downloader" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="57" y="585" width="180" height="112" as="geometry">
+            <mxRectangle x="104" y="620" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-36" value="&gt; 突破反爬策略&#xa;    1. 模拟登录后携带cookie&#xa;    2. 验证码&#xa;         2.1 验证码库&#xa;         2.2 OCR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="0bUQnS7tA1ShmJKjDFLA-35">
+          <mxGeometry y="26" width="180" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=94;exitDy=30;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0bUQnS7tA1ShmJKjDFLA-41" target="0bUQnS7tA1ShmJKjDFLA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-41" value="IP池" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="413" width="94" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-65" value="重载parser，实现&#xa;具体的解析函数" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="526" y="626" width="114" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-67" value="重载monitor，实现&lt;br&gt;具体的浏览器行为" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="261" y="738" width="114" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-68" value="&gt; 表单提交" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1">
+          <mxGeometry x="57" y="772" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-20" value="&gt; 动态页面模拟点击" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1">
+          <mxGeometry x="57" y="746" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="0bUQnS7tA1ShmJKjDFLA-69" value="重载downloder，定制反反爬" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="166" y="520" width="114" height="42" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
